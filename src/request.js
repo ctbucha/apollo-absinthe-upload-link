@@ -1,5 +1,5 @@
-import { ajax } from 'rxjs/ajax'
-import { map } from 'rxjs/operators'
+import { ajax } from 'rxjs/ajax';
+import { map } from 'rxjs/operators';
 
 /**
  * Request function
@@ -16,4 +16,4 @@ const request = opts =>
     crossDomain: opts.crossDomain,
   }).pipe(map(({ response }) => response))
 
-export default request
+export default request;

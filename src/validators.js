@@ -1,7 +1,7 @@
-export const isObject = value => value !== null && typeof value === 'object'
+export const isObject = value => value !== null && typeof value === 'object';
 
 export const isFileList = value =>
-  typeof FileList !== 'undefined' && value instanceof FileList
+  typeof FileList !== 'undefined' && value instanceof FileList;
 
 export const isUploadFile = value =>
   (typeof File !== 'undefined' && value instanceof File) ||
@@ -32,9 +32,9 @@ export class ReactNativeFile {
    * })
    */
   constructor({ uri, type, name }) {
-    this.uri = uri
-    this.type = type
-    this.name = name
+    this.uri = uri;
+    this.type = type;
+    this.name = name;
   }
 
   /**
@@ -53,4 +53,4 @@ export class ReactNativeFile {
    */
 }
 
-ReactNativeFile.list = files => files.map(file => new ReactNativeFile(file))
+ReactNativeFile.list = files => files.map(file => new ReactNativeFile(file));
